@@ -25,8 +25,6 @@ private static final Scanner scanner = new Scanner(System.in);
         return numbersArray;
     }
     private static int[] sortArray(int[] numbersArray){
-       // int number = numbersArray[0];
-       // int numberIPlusJeden = 0;
         for (int i = 0; i < numbersArray.length; i++){
             for (int j = 0; j < numbersArray.length; j++){
                 if (numbersArray[i] < numbersArray[j]){

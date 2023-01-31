@@ -10,8 +10,6 @@ public class Task7 {
 
     public static void main(String[] args) {
        String toChecking = takeString();
-        //System.out.println(toChecking);
-      // char serchedChar = ' ';
         System.out.println(calculatePercentOfSpacesInString(toChecking));
 
     }

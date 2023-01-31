@@ -6,11 +6,11 @@ public class Task5 {
     public static void main(String[] args) {
         String input = "Ala ma kota";
         char searchedChar = 'a';
-        System.out.println("Result" + countingSerchedChar("Ala ma kota" , 'a'));
+        System.out.println("Result" + countingSerchedChar(input , searchedChar));
 
          input = "Ala ma kota";
          searchedChar = 'z';
-        System.out.println("Result" + countingSerchedChar("Ala ma kota" , 'z'));
+        System.out.println("Result" + countingSerchedChar(input , searchedChar));
     }
 
     private static int countingSerchedChar(String input, char searchedChar){

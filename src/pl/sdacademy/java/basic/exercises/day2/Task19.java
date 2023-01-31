@@ -30,16 +30,16 @@ public class Task19 {
         int sumFirst = 0;
         int sumSecond = 0;
         Integer[][] biggest;
-        for (int i = 0; i < first.length; i++){
-            for (int j = 0; j < first[i].length; j++){
-                sumFirst += first[i][j];
+        for (Integer[] integers : first) {
+            for (Integer integer : integers) {
+                sumFirst += integer;
 
-           }
+            }
         }
 
-        for (int i = 0; i < second.length; i++){
-            for (int j = 0; j < second[i].length; j++){
-                sumSecond += second[i][j];
+        for (Integer[] integers : second) {
+            for (Integer integer : integers) {
+                sumSecond += integer;
             }
         }
 
@@ -58,20 +58,18 @@ public class Task19 {
         int biggestFirst = 0;
         int biggestSecond = 0;
         int biggest;
-        for (int i = 0; i < first.length; i++){
-            for (int j = 0; j < first[i].length; j++){
-                int numberfirst = first[i][j];
-                if (numberfirst > biggestFirst){
+        for (Integer[] integers : first) {
+            for (int numberfirst : integers) {
+                if (numberfirst > biggestFirst) {
                     biggestFirst = numberfirst;
                 }
 
             }
         }
 
-        for (int i = 0; i < second.length; i++){
-            for (int j = 0; j < second[i].length; j++){
-                int numberSecond = second[i][j];
-                if (numberSecond > biggestSecond){
+        for (Integer[] integers : second) {
+            for (int numberSecond : integers) {
+                if (numberSecond > biggestSecond) {
                     biggestSecond = numberSecond;
                 }
             }
@@ -86,20 +84,18 @@ public class Task19 {
         int lowestFirst = 0;
         int lowestSecond = 0;
         int lowest;
-        for (int i = 0; i < first.length; i++){
-            for (int j = 0; j < first[i].length; j++){
-                int numberfirst = first[i][j];
-                if (numberfirst <  lowestFirst){
+        for (Integer[] integers : first) {
+            for (int numberfirst : integers) {
+                if (numberfirst < lowestFirst) {
                     lowestFirst = numberfirst;
                 }
 
             }
         }
 
-        for (int i = 0; i < second.length; i++){
-            for (int j = 0; j < second[i].length; j++){
-                int numberSecond = second[i][j];
-                if (numberSecond < lowestSecond){
+        for (Integer[] integers : second) {
+            for (int numberSecond : integers) {
+                if (numberSecond < lowestSecond) {
                     lowestSecond = numberSecond;
                 }
             }
