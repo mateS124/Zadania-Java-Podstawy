@@ -4,9 +4,9 @@ import java.util.Arrays;
 
 public class Task20 {
     public static void main(String[] args) {
-     int lenght = 5;
-     int firstElement = 3;
-     int odds = 3;
+     int lenght = 6;
+     int firstElement = 5;
+     int odds = 4;
 
      int[] sequences = makeArthmeticSequences(firstElement, lenght, odds );
      System.out.println(Arrays.toString(sequences));
@@ -17,10 +17,10 @@ public class Task20 {
     }
 
     public static int[] makeArthmeticSequences(int firstElement, int lenght, int odds){
-        int[] arthmeticSequences = new int[lenght-1];
+        int[] arthmeticSequences = new int[lenght];
         arthmeticSequences[0] = firstElement;
         int counter = firstElement;
-        for (int i = 1; i < lenght -1; i++){
+        for (int i = 1; i <= lenght -1; i++){
             arthmeticSequences[i] = counter + odds ;
             counter = arthmeticSequences[i];
         }
