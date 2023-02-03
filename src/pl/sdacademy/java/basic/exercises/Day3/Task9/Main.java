@@ -1,32 +1,34 @@
 package pl.sdacademy.java.basic.exercises.Day3.Task9;
-import pl.sdacademy.java.basic.exercises.Day3.Task9.Order;
-import pl.sdacademy.java.basic.exercises.Day3.Task9.OrderItem;
+public class Main {
 
-
-public class Main extends Order {
     public static void main(String[] args) {
 
+        OrderItem orderItem1 = new OrderItem("Cukier", 1, 3.50);
 
-//        OrderItem cukier = new OrderItem("Cukier", 2, 3.50);
-//        OrderItem maka = new OrderItem("Mąka", 2, 2.50);
-//        OrderItem chleb = new OrderItem("Chleb", 3, 4.0);
-//        OrderItem jajka = new OrderItem("Jajka", 4, 4.0);
-//        OrderItem mleko = new OrderItem("Mleko", 5, 4.0);
+        OrderItem orderItem2 = new OrderItem("Mąka", 2, 4.00);
 
-       Order item = new Order(5);
+        OrderItem orderItem3 = new OrderItem("Chleb", 3, 4.00);
 
+        OrderItem orderItem4 = new OrderItem("Jaja", 4, 4.00);
 
-
-
-       Order.print();
+        OrderItem orderItem5 = new OrderItem("Mleko", 5, 4.00);
 
 
 
 
+        Order order = new Order(5);
 
+        order.addItem(orderItem1);
 
+        order.addItem(orderItem2);
 
+        order.addItem(orderItem3);
 
+        order.addItem(orderItem4);
+
+        order.addItem(orderItem5);
+
+        order.print();
 
     }
 
